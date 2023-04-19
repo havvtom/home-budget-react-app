@@ -1,5 +1,15 @@
 import { Form, NavLink } from "react-router-dom"
 import logo from "../assets/logomark.svg"
+import { TrashIcon } from '@heroicons/react/24/solid'
+
+function MyComponent() {
+  return (
+    <div>
+      <BeakerIcon className="h-6 w-6 text-blue-500" />
+      <p>...</p>
+    </div>
+  )
+}
 
 export default function Navbar(props){
   return (
@@ -25,6 +35,7 @@ export default function Navbar(props){
           >
             <button className="btn btn--warning">
               <span>Delete User</span>
+              <TrashIcon width={20}/>
             </button>
           </Form>
         )
