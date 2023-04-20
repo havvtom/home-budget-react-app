@@ -34,6 +34,7 @@ export default function AddBudgetForm(){
             required
             inputMode="decimal"
           />
+          <input type="hidden" name="_action" value="createBudget" />
         </div>
         <button type="submit" className="btn btn--dark">
           <span>Create budget</span>
